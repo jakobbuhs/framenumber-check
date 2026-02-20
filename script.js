@@ -1,13 +1,13 @@
-// Simple client-side checker.
-// NOTE: This loads frames.json in the browser. If you want to keep the list private,
-// use the "serverless option" in README.md.
+// Enkel sjekk på klientsiden.
+// MERK: Dette laster frames.json i nettleseren. Hvis du vil holde listen privat,
+// bruk "serverless-alternativet" i README.md.
 
 let frames = null;      // mapping SN -> info
 let frameSet = null;    // Set of SN strings
 let meta = null;
 
 const CONTACT_EMAIL = "REPLACE_ME@example.com"; // <-- change this
-const CONTACT_LINK_TEXT = "Contact us";
+const CONTACT_LINK_TEXT = "Kontakt oss";
 
 function normalize(raw) {
   if (!raw) return "";
@@ -27,7 +27,7 @@ function lookup(snRaw) {
   // If all digits, also try stripping leading zeros
   if (/^\d+$/.test(sn)) {
     const stripped = sn.replace(/^0+/, "");
-    if (stripped && frameSet.has(stripped)) return { state: "hit", sn: stripped, info: frames[stripped], note: `Matched after removing leading zeros (you entered ${sn}).` };
+    if (stripped && frameSet.has(stripped)) return { state: "hit", sn: stripped, info: frames[stripped], note: `Treff etter fjerning av ledende nuller (du skrev inn ${sn}).` };
   }
 
   return { state: "miss", sn };
@@ -46,10 +46,10 @@ function contactCTA() {
   return `
     <div class="cta">
       <a class="tag" href="${mailto}">${CONTACT_LINK_TEXT}</a>
-      <a class="tag" href="#" onclick="window.location.reload(); return false;">Check another number</a>
+      <a class="tag" href="#" onclick="window.location.reload(); return false;">Sjekk et annet nummer</a>
     </div>
     <div class="tiny">
-      Admin: set your contact email in <code>script.js</code> (CONTACT_EMAIL).
+      Admin: sett din kontakt-e-post i <code>script.js</code> (CONTACT_EMAIL).
     </div>
   `;
 }
@@ -62,10 +62,10 @@ async function init() {
     frameSet = new Set(Object.keys(frames));
     meta = data.meta || {};
     document.getElementById("meta").textContent =
-      `List contains ${meta.count ?? frameSet.size} frame numbers (updated from file: ${meta.source_file ?? "frames.json"}, dates: ${meta.date_range?.min ?? "?"} to ${meta.date_range?.max ?? "?"}).`;
-    setResultHTML(`<span class="tag">Ready</span><p>Enter a frame number and press <b>Check</b>.</p>`, "loading");
+      `Listen inneholder ${meta.count ?? frameSet.size} rammenumre (oppdatert fra fil: ${meta.source_file ?? "frames.json"}, datoer: ${meta.date_range?.min ?? "?"} til ${meta.date_range?.max ?? "?"}).`;
+    setResultHTML(`<span class="tag">Klar</span><p>Skriv inn et rammenummer og trykk <b>Sjekk</b>.</p>`, "loading");
   } catch (e) {
-    setResultHTML(`<span class="tag">Error</span><p>Could not load the list. Please try again later.</p>`, "no");
+    setResultHTML(`<span class="tag">Feil</span><p>Kunne ikke laste listen. Vennligst prøv igjen senere.</p>`, "no");
     console.error(e);
   }
 }
@@ -75,7 +75,7 @@ function onCheck() {
   const out = lookup(val);
 
   if (out.state === "empty") {
-    setResultHTML(`<span class="tag">Missing</span><p>Please enter a frame number.</p>`, "loading");
+    setResultHTML(`<span class="tag">Mangler</span><p>Vennligst skriv inn et rammenummer.</p>`, "loading");
     return;
   }
 
@@ -83,14 +83,14 @@ function onCheck() {
     const info = out.info || {};
     const details = `
       <div class="kvs">
-        ${info.description ? `<div class="kv"><b>Model</b>: ${escapeHtml(info.description)}</div>` : ""}
-        ${info.code ? `<div class="kv"><b>Code</b>: ${escapeHtml(info.code)}</div>` : ""}
-        <div class="kv"><b>Frame number</b>: ${escapeHtml(out.sn)}</div>
+        ${info.description ? `<div class="kv"><b>Modell</b>: ${escapeHtml(info.description)}</div>` : ""}
+        ${info.code ? `<div class="kv"><b>Kode</b>: ${escapeHtml(info.code)}</div>` : ""}
+        <div class="kv"><b>Rammenummer</b>: ${escapeHtml(out.sn)}</div>
       </div>
     `;
     setResultHTML(
-      `<span class="tag">Found</span>
-       <p><b>Your frame number appears on the list.</b> Please contact us so we can help you with next steps.</p>
+      `<span class="tag">Funnet</span>
+       <p><b>Rammenummeret ditt er på listen.</b> Vennligst kontakt oss slik at vi kan hjelpe deg videre.</p>
        ${out.note ? `<p class="tiny">${escapeHtml(out.note)}</p>` : ""}
        ${details}
        ${contactCTA()}`,
@@ -100,9 +100,9 @@ function onCheck() {
   }
 
   setResultHTML(
-    `<span class="tag">Not found</span>
-     <p>We couldn’t find that frame number in the current list.</p>
-     <p class="tiny">If you think this is a mistake, please reach out anyway.</p>
+    `<span class="tag">Ikke funnet</span>
+     <p>Vi fant ikke det rammenummeret i den gjeldende listen.</p>
+     <p class="tiny">Hvis du tror dette er en feil, ta gjerne kontakt likevel.</p>
      ${contactCTA()}`,
     "no"
   );

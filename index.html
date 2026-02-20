@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="no">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>011 Frame Number Checker</title>
-  <meta name="description" content="Check if your 011 frame number is on the list." />
+  <title>011 Rammenummer-sjekk</title>
+  <meta name="description" content="Sjekk om ditt 011-rammenummer er på listen." />
   <style>
     :root { --bg:#0b0f19; --card:#121a2a; --text:#e7edf7; --muted:#a7b3c7; --good:#2dd4bf; --bad:#fb7185; --warn:#fbbf24; }
     * { box-sizing: border-box; }
@@ -38,21 +38,21 @@
 <body>
   <div class="wrap">
     <div class="card">
-      <h1>011 Frame Number Checker</h1>
-      <p>Enter your frame number below. We’ll check if it appears in our list.</p>
+      <h1>011 Rammenummer-sjekk</h1>
+      <p>Skriv inn rammenummeret ditt nedenfor. Vi sjekker om det finnes i listen vår.</p>
 
       <div class="row">
-        <input id="sn" inputmode="text" autocomplete="off" placeholder="e.g. 011XXXX or 1180614159" />
-        <button id="btn">Check</button>
+        <input id="sn" inputmode="text" autocomplete="off" placeholder="f.eks. 011XXXX eller 1180614159" />
+        <button id="btn">Sjekk</button>
       </div>
 
       <div id="result" class="result loading" aria-live="polite">
-        <span class="tag">Loading list…</span>
+        <span class="tag">Laster liste…</span>
         <div class="footer" id="meta"></div>
       </div>
 
       <div class="tiny">
-        Tip: You can paste the full value — we’ll ignore spaces and symbols.
+        Tips: Du kan lime inn hele verdien — vi ignorerer mellomrom og symboler.
       </div>
     </div>
   </div>
