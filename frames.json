@@ -1,0 +1,656 @@
+{
+  "meta": {
+    "count": 161,
+    "source_file": "AVANT NORWAY (1) (1).xlsx",
+    "date_range": {
+      "min": "2025-05-30",
+      "max": "2025-10-24"
+    }
+  },
+  "frames": {
+    "1180614159": {
+      "description": "AVANT H40 51 WHI",
+      "code": "S10251BN"
+    },
+    "1180614167": {
+      "description": "AVANT H40 51 WHI",
+      "code": "S10251BN"
+    },
+    "1180613954": {
+      "description": "AVANT H40 53 WHI",
+      "code": "S10253BN"
+    },
+    "1180614071": {
+      "description": "AVANT H40 53 WHI",
+      "code": "S10253BN"
+    },
+    "1180614171": {
+      "description": "AVANT H40 53 WHI",
+      "code": "S10253BN"
+    },
+    "1180614174": {
+      "description": "AVANT H40 55 WHI",
+      "code": "S10255BN"
+    },
+    "1180613614": {
+      "description": "AVANT H40 49 WHI",
+      "code": "S10249BN"
+    },
+    "1180614069": {
+      "description": "AVANT H40 49 WHI",
+      "code": "S10249BN"
+    },
+    "1180614156": {
+      "description": "AVANT H40 49 WHI",
+      "code": "S10249BN"
+    },
+    "1180614158": {
+      "description": "AVANT H40 49 WHI",
+      "code": "S10249BN"
+    },
+    "1180614168": {
+      "description": "AVANT H40 49 WHI",
+      "code": "S10249BN"
+    },
+    "1180614238": {
+      "description": "AVANT H40 49 WHI",
+      "code": "S10249BN"
+    },
+    "1180614239": {
+      "description": "AVANT H30 49 WHI",
+      "code": "S10349BN"
+    },
+    "1180614521": {
+      "description": "AVANT H30 49 WHI",
+      "code": "S10349BN"
+    },
+    "1180613964": {
+      "description": "AVANT H30 51 WHI",
+      "code": "S10351BN"
+    },
+    "1180614124": {
+      "description": "AVANT H30 51 WHI",
+      "code": "S10351BN"
+    },
+    "1180614183": {
+      "description": "AVANT H30 55 WHI",
+      "code": "S10355BN"
+    },
+    "1180614191": {
+      "description": "AVANT H30 55 WHI",
+      "code": "S10355BN"
+    },
+    "1180614157": {
+      "description": "AVANT H60 49 WHI",
+      "code": "S10149BN"
+    },
+    "1180614068": {
+      "description": "AVANT H60 49 WHI",
+      "code": "S10149BN"
+    },
+    "1180614219": {
+      "description": "AVANT H60 49 WHI",
+      "code": "S10149BN"
+    },
+    "1180614244": {
+      "description": "AVANT H60 49 WHI",
+      "code": "S10149BN"
+    },
+    "1180642222": {
+      "description": "AVANT H30 57 BLU",
+      "code": "S10357BB"
+    },
+    "1180646322": {
+      "description": "AVANT H60 57 WHI",
+      "code": "S10157BN"
+    },
+    "1180613953": {
+      "description": "AVANT H60 55 WHI",
+      "code": "S10155BN"
+    },
+    "1180614179": {
+      "description": "AVANT H60 55 WHI",
+      "code": "S10155BN"
+    },
+    "1180613951": {
+      "description": "AVANT H60 51 WHI",
+      "code": "S10151BN"
+    },
+    "1180614111": {
+      "description": "AVANT H60 55 WHI",
+      "code": "S10155BN"
+    },
+    "1180614170": {
+      "description": "AVANT H60 55 WHI",
+      "code": "S10155BN"
+    },
+    "1180647274": {
+      "description": "AVANT H60 55 WHI",
+      "code": "S10155BN"
+    },
+    "1180613611": {
+      "description": "AVANT H60 49 WHI",
+      "code": "S10149BN"
+    },
+    "1180613961": {
+      "description": "AVANT H60 49 WHI",
+      "code": "S10149BN"
+    },
+    "1180614166": {
+      "description": "AVANT H60 49 WHI",
+      "code": "S10149BN"
+    },
+    "1180614195": {
+      "description": "AVANT H60 49 WHI",
+      "code": "S10149BN"
+    },
+    "1180614208": {
+      "description": "AVANT H60 49 WHI",
+      "code": "S10149BN"
+    },
+    "1180614243": {
+      "description": "AVANT H60 49 WHI",
+      "code": "S10149BN"
+    },
+    "1180613602": {
+      "description": "AVANT H30 53 WHI",
+      "code": "S10353BN"
+    },
+    "1180614172": {
+      "description": "AVANT H30 53 WHI",
+      "code": "S10353BN"
+    },
+    "1180614186": {
+      "description": "AVANT H30 51 WHI",
+      "code": "S10351BN"
+    },
+    "1180646216": {
+      "description": "AVANT H30 55 BRZ",
+      "code": "S10355BD"
+    },
+    "1180646877": {
+      "description": "AVANT H30 55 BRZ",
+      "code": "S10355BD"
+    },
+    "1180646887": {
+      "description": "AVANT H30 55 BRZ",
+      "code": "S10355BD"
+    },
+    "1180646699": {
+      "description": "AVANT H30 57 BRZ",
+      "code": "S10357BD"
+    },
+    "1180614187": {
+      "description": "AVANT H60 47 WHI",
+      "code": "S10147BN"
+    },
+    "1180647383": {
+      "description": "AVANT H60 47 WHI",
+      "code": "S10147BN"
+    },
+    "1180614123": {
+      "description": "AVANT H40 51 WHI",
+      "code": "S10251BN"
+    },
+    "1180614185": {
+      "description": "AVANT H40 47 WHI",
+      "code": "S10247BN"
+    },
+    "1180614222": {
+      "description": "AVANT H40 47 WHI",
+      "code": "S10247BN"
+    },
+    "1180646314": {
+      "description": "AVANT H60 53 WHI",
+      "code": "S10153BN"
+    },
+    "1180613974": {
+      "description": "AVANT H60 47 WHI",
+      "code": "S10147BN"
+    },
+    "1180614133": {
+      "description": "AVANT H60 47 WHI",
+      "code": "S10147BN"
+    },
+    "1180614145": {
+      "description": "AVANT H60 47 WHI",
+      "code": "S10147BN"
+    },
+    "1180614749": {
+      "description": "AVANT H60 47 WHI",
+      "code": "S10147BN"
+    },
+    "1180646611": {
+      "description": "AVANT H60 51 WHI",
+      "code": "S10151BN"
+    },
+    "1180647089": {
+      "description": "AVANT H60 51 WHI",
+      "code": "S10151BN"
+    },
+    "1180647257": {
+      "description": "AVANT H60 51 WHI",
+      "code": "S10151BN"
+    },
+    "1180647397": {
+      "description": "AVANT H60 51 WHI",
+      "code": "S10151BN"
+    },
+    "1180646625": {
+      "description": "AVANT H60 53 WHI",
+      "code": "S10153BN"
+    },
+    "1180614248": {
+      "description": "AVANT H60 47 WHI",
+      "code": "S10147BN"
+    },
+    "1180646801": {
+      "description": "AVANT H60 47 WHI",
+      "code": "S10147BN"
+    },
+    "1180613965": {
+      "description": "AVANT H60 51 WHI",
+      "code": "S10151BN"
+    },
+    "1180646559": {
+      "description": "AVANT H60 51 WHI",
+      "code": "S10151BN"
+    },
+    "1180646672": {
+      "description": "AVANT H60 51 WHI",
+      "code": "S10151BN"
+    },
+    "1180647272": {
+      "description": "AVANT H60 51 WHI",
+      "code": "S10151BN"
+    },
+    "1180647948": {
+      "description": "AVANT H40 55 BRZ",
+      "code": "S10255BD"
+    },
+    "1180614066": {
+      "description": "AVANT H40 51 WHI",
+      "code": "S10251BN"
+    },
+    "1180614125": {
+      "description": "AVANT H40 51 WHI",
+      "code": "S10251BN"
+    },
+    "1180614444": {
+      "description": "AVANT H40 51 WHI",
+      "code": "S10251BN"
+    },
+    "1180646569": {
+      "description": "AVANT H40 51 WHI",
+      "code": "S10251BN"
+    },
+    "1180646671": {
+      "description": "AVANT H40 51 WHI",
+      "code": "S10251BN"
+    },
+    "1180647059": {
+      "description": "AVANT H40 51 WHI",
+      "code": "S10251BN"
+    },
+    "1180614142": {
+      "description": "AVANT H60 47 WHI",
+      "code": "S10147BN"
+    },
+    "1180646325": {
+      "description": "AVANT H60 51 WHI",
+      "code": "S10151BN"
+    },
+    "1180646570": {
+      "description": "AVANT H60 51 WHI",
+      "code": "S10151BN"
+    },
+    "1180647318": {
+      "description": "AVANT H60 51 WHI",
+      "code": "S10151BN"
+    },
+    "1180613971": {
+      "description": "AVANT H40 47 WHI",
+      "code": "S10247BN"
+    },
+    "1180613973": {
+      "description": "AVANT H40 47 WHI",
+      "code": "S10247BN"
+    },
+    "1180614078": {
+      "description": "AVANT H40 47 WHI",
+      "code": "S10247BN"
+    },
+    "1180614561": {
+      "description": "AVANT H40 47 WHI",
+      "code": "S10247BN"
+    },
+    "1180614077": {
+      "description": "AVANT H30 47 WHI",
+      "code": "S10347BN"
+    },
+    "1180614189": {
+      "description": "AVANT H30 47 WHI",
+      "code": "S10347BN"
+    },
+    "1180615240": {
+      "description": "AVANT H30 47 WHI",
+      "code": "S10347BN"
+    },
+    "1180614229": {
+      "description": "AVANT H30 49 WHI",
+      "code": "S10349BN"
+    },
+    "1180646590": {
+      "description": "AVANT H30 49 WHI",
+      "code": "S10349BN"
+    },
+    "1180646896": {
+      "description": "AVANT H30 53 BRZ",
+      "code": "S10353BD"
+    },
+    "1180649034": {
+      "description": "AVANT H30 53 BRZ",
+      "code": "S10353BD"
+    },
+    "1180646828": {
+      "description": "AVANT H30 60 BRZ",
+      "code": "S10360BD"
+    },
+    "1180646993": {
+      "description": "AVANT H30 60 BRZ",
+      "code": "S10360BD"
+    },
+    "1180646883": {
+      "description": "AVANT H30 57 BRZ",
+      "code": "S10357BD"
+    },
+    "1180646995": {
+      "description": "AVANT H30 57 BRZ",
+      "code": "S10357BD"
+    },
+    "1180648605": {
+      "description": "AVANT H40 53 BLU",
+      "code": "S10253BB"
+    },
+    "1180646941": {
+      "description": "AVANT H60 49 WHI",
+      "code": "S10149BN"
+    },
+    "1180646811": {
+      "description": "AVANT H30 47 WHI",
+      "code": "S10347BN"
+    },
+    "1180649193": {
+      "description": "AVANT H30 49 BRZ",
+      "code": "S10349BD"
+    },
+    "1180649263": {
+      "description": "AVANT H30 49 BRZ",
+      "code": "S10349BD"
+    },
+    "1180648533": {
+      "description": "AVANT H30 51 BLU",
+      "code": "S10351BB"
+    },
+    "1180649272": {
+      "description": "AVANT H30 51 BRZ",
+      "code": "S10351BD"
+    },
+    "1180649289": {
+      "description": "AVANT H30 51 BRZ",
+      "code": "S10351BD"
+    },
+    "1180649298": {
+      "description": "AVANT H30 51 BRZ",
+      "code": "S10351BD"
+    },
+    "1180646673": {
+      "description": "AVANT H30 51 WHI",
+      "code": "S10351BN"
+    },
+    "1180649247": {
+      "description": "AVANT H30 53 BRZ",
+      "code": "S10353BD"
+    },
+    "1180642127": {
+      "description": "AVANT H30 53 BLU",
+      "code": "S10353BB"
+    },
+    "1180647386": {
+      "description": "AVANT H30 47 BRZ",
+      "code": "S10347BD"
+    },
+    "1180666523": {
+      "description": "AVANT H30 53 BLU",
+      "code": "S10353BB"
+    },
+    "1180667571": {
+      "description": "AVANT H60 53 WHI",
+      "code": "S10153BN"
+    },
+    "1180668093": {
+      "description": "AVANT H60 53 WHI",
+      "code": "S10153BN"
+    },
+    "1180668116": {
+      "description": "AVANT H60 53 WHI",
+      "code": "S10153BN"
+    },
+    "1180661386": {
+      "description": "AVANT H60 51 WHI",
+      "code": "S10151BN"
+    },
+    "1180661507": {
+      "description": "AVANT H60 51 WHI",
+      "code": "S10151BN"
+    },
+    "1180661425": {
+      "description": "AVANT H50 47 WHI",
+      "code": "T10147BN"
+    },
+    "1180661343": {
+      "description": "AVANT H50 49 WHI",
+      "code": "T10149BN"
+    },
+    "1180661344": {
+      "description": "AVANT H50 49 WHI",
+      "code": "T10149BN"
+    },
+    "1180661394": {
+      "description": "AVANT H50 49 WHI",
+      "code": "T10149BN"
+    },
+    "1180661456": {
+      "description": "AVANT H50 49 WHI",
+      "code": "T10149BN"
+    },
+    "1180661981": {
+      "description": "AVANT H50 49 WHI",
+      "code": "T10149BN"
+    },
+    "1180661282": {
+      "description": "AVANT H40 47 WHI",
+      "code": "T10247BN"
+    },
+    "1180661341": {
+      "description": "AVANT H40 49 WHI",
+      "code": "T10249BN"
+    },
+    "1180661433": {
+      "description": "AVANT H40 49 WHI",
+      "code": "T10249BN"
+    },
+    "1180661434": {
+      "description": "AVANT H40 49 WHI",
+      "code": "T10249BN"
+    },
+    "1180662003": {
+      "description": "AVANT H40 53 WHI",
+      "code": "T10253BN"
+    },
+    "1180661432": {
+      "description": "AVANT H50 47 WHI",
+      "code": "T10147BN"
+    },
+    "1180661346": {
+      "description": "AVANT H50 51 WHI",
+      "code": "T10151BN"
+    },
+    "1180661390": {
+      "description": "AVANT H50 51 WHI",
+      "code": "T10151BN"
+    },
+    "1180661898": {
+      "description": "AVANT H50 51 WHI",
+      "code": "T10151BN"
+    },
+    "1180661431": {
+      "description": "AVANT H40 47 WHI",
+      "code": "T10247BN"
+    },
+    "1180661853": {
+      "description": "AVANT H40 47 WHI",
+      "code": "T10247BN"
+    },
+    "1180661284": {
+      "description": "AVANT H40 51 WHI",
+      "code": "T10251BN"
+    },
+    "1180661476": {
+      "description": "AVANT H40 51 WHI",
+      "code": "T10251BN"
+    },
+    "1180661897": {
+      "description": "AVANT H40 51 WHI",
+      "code": "T10251BN"
+    },
+    "1180661896": {
+      "description": "AVANT H40 51 WHI",
+      "code": "T10251BN"
+    },
+    "1180646605": {
+      "description": "AVANT H30 51 WHI",
+      "code": "S10351BN"
+    },
+    "1180668202": {
+      "description": "AVANT H30 55 WHI",
+      "code": "S10355BN"
+    },
+    "1180661478": {
+      "description": "AVANT H50 51 WHI",
+      "code": "T10151BN"
+    },
+    "1180661964": {
+      "description": "AVANT H50 51 WHI",
+      "code": "T10151BN"
+    },
+    "1180661769": {
+      "description": "AVANT H30 51 WHI",
+      "code": "S10351BN"
+    },
+    "1180667733": {
+      "description": "AVANT H30 53 WHI",
+      "code": "S10353BN"
+    },
+    "1180668175": {
+      "description": "AVANT H30 55 WHI",
+      "code": "S10355BN"
+    },
+    "1180660306": {
+      "description": "AVANT H50 53 WHI",
+      "code": "T10153BN"
+    },
+    "1180661952": {
+      "description": "AVANT H50 53 WHI",
+      "code": "T10153BN"
+    },
+    "1180661888": {
+      "description": "AVANT H40 53 WHI",
+      "code": "T10253BN"
+    },
+    "1180667565": {
+      "description": "AVANT H30 53 WHI",
+      "code": "S10353BN"
+    },
+    "1180668109": {
+      "description": "AVANT H30 53 WHI",
+      "code": "S10353BN"
+    },
+    "1180662264": {
+      "description": "AVANT H30 60 BRZ",
+      "code": "S10360BD"
+    },
+    "1180666775": {
+      "description": "AVANT H30 57 BLU",
+      "code": "S10357BB"
+    },
+    "1180662841": {
+      "description": "AVANT H50 53 WHI",
+      "code": "T10153BN"
+    },
+    "1180661601": {
+      "description": "AVANT H50 53 WHI",
+      "code": "T10153BN"
+    },
+    "1180648567": {
+      "description": "AVANT H30 55 BRZ",
+      "code": "S10355BD"
+    },
+    "1180665992": {
+      "description": "AVANT H30 55 BRZ",
+      "code": "S10355BD"
+    },
+    "1180666838": {
+      "description": "AVANT H30 55 BLU",
+      "code": "S10355BB"
+    },
+    "1180662736": {
+      "description": "AVANT H40 53 WHI",
+      "code": "T10253BN"
+    },
+    "1180666762": {
+      "description": "AVANT H30 53 BLU",
+      "code": "S10353BB"
+    },
+    "1180649031": {
+      "description": "AVANT H30 53 BRZ",
+      "code": "S10353BD"
+    },
+    "1180665657": {
+      "description": "AVANT H30 55 BRZ",
+      "code": "S10355BD"
+    },
+    "1180650568": {
+      "description": "AVANT H50 51 WHI",
+      "code": "T10151BN"
+    },
+    "1180652820": {
+      "description": "AVANT H30 60 BLU",
+      "code": "S10360BB"
+    },
+    "1180650860": {
+      "description": "AVANT H50 47 WHI",
+      "code": "T10147BN"
+    },
+    "1180650938": {
+      "description": "AVANT H50 47 WHI",
+      "code": "T10147BN"
+    },
+    "1180650394": {
+      "description": "AVANT H50 47 WHI",
+      "code": "T10147BN"
+    },
+    "1180650652": {
+      "description": "AVANT H50 47 WHI",
+      "code": "T10147BN"
+    },
+    "1180661474": {
+      "description": "AVANT H50 47 WHI",
+      "code": "T10147BN"
+    },
+    "1180650060": {
+      "description": "AVANT H40 51 WHI",
+      "code": "T10251BN"
+    }
+  }
+}
