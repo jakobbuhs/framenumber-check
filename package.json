@@ -1,0 +1,11 @@
+{
+  "name": "framenumber-check",
+  "version": "1.0.0",
+  "description": "Static frame-number recall checker with a testable matching core.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test": "node --test"
+  },
+  "license": "UNLICENSED"
+}
