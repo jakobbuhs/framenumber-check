@@ -1,36 +1,28 @@
-// Enkel sjekk på klientsiden.
-// MERK: Dette laster frames.json i nettleseren. Hvis du vil holde listen privat,
-// bruk "serverless-alternativet" i README.md.
+// Client-side lookup.
+// NOTE: this version fetches frames.json in the browser, so the full list is
+// technically downloadable by anyone. To keep the list private, deploy the
+// serverless boolean API described in README.md (see api/check.js).
+
+import { lookupFrame } from "./frame-utils.js";
 
 let frames = null;      // mapping SN -> info
 let frameSet = null;    // Set of SN strings
 let meta = null;
 
-const CONTACT_EMAIL = "REPLACE_ME@example.com"; // <-- change this
+// Optional contact details. Leave empty to render contact guidance without a
+// broken mailto link; set your address to enable the "Kontakt oss" button.
+const CONTACT_EMAIL = "";
 const CONTACT_LINK_TEXT = "Kontakt oss";
 
-function normalize(raw) {
-  if (!raw) return "";
-  // Keep only letters+digits (so users can paste labels/spaces)
-  const parts = raw.toString().trim().match(/[A-Za-z0-9]+/g);
-  if (!parts) return "";
-  return parts.join("").toUpperCase();
-}
-
 function lookup(snRaw) {
-  const sn = normalize(snRaw);
-  if (!sn) return { state: "empty" };
-
-  // Exact match
-  if (frameSet.has(sn)) return { state: "hit", sn, info: frames[sn] };
-
-  // If all digits, also try stripping leading zeros
-  if (/^\d+$/.test(sn)) {
-    const stripped = sn.replace(/^0+/, "");
-    if (stripped && frameSet.has(stripped)) return { state: "hit", sn: stripped, info: frames[stripped], note: `Treff etter fjerning av ledende nuller (du skrev inn ${sn}).` };
+  const out = lookupFrame(snRaw, frameSet);
+  if (out.state === "hit") {
+    out.info = frames[out.sn];
+    if (out.viaLeadingZeroStrip) {
+      out.note = "Treff etter fjerning av ledende nuller.";
+    }
   }
-
-  return { state: "miss", sn };
+  return out;
 }
 
 function setResultHTML(html, cssClass) {
@@ -42,14 +34,13 @@ function setResultHTML(html, cssClass) {
 
 function contactCTA() {
   const safeEmail = CONTACT_EMAIL.trim();
-  const mailto = safeEmail.includes("@") ? `mailto:${encodeURIComponent(safeEmail)}` : "#";
+  const contactControl = safeEmail.includes("@")
+    ? `<a class="tag" href="mailto:${encodeURIComponent(safeEmail)}">${CONTACT_LINK_TEXT}</a>`
+    : `<span class="tag">${CONTACT_LINK_TEXT}</span>`;
   return `
     <div class="cta">
-      <a class="tag" href="${mailto}">${CONTACT_LINK_TEXT}</a>
-      <a class="tag" href="#" onclick="window.location.reload(); return false;">Sjekk et annet nummer</a>
-    </div>
-    <div class="tiny">
-      Admin: sett din kontakt-e-post i <code>script.js</code> (CONTACT_EMAIL).
+      ${contactControl}
+      <button type="button" class="tag as-link" id="reset-btn">Sjekk et annet nummer</button>
     </div>
   `;
 }
@@ -120,6 +111,19 @@ function escapeHtml(str) {
 document.getElementById("btn").addEventListener("click", onCheck);
 document.getElementById("sn").addEventListener("keydown", (e) => {
   if (e.key === "Enter") onCheck();
+});
+
+// Delegated handler for the dynamically-rendered "check another number" button.
+document.getElementById("result").addEventListener("click", (e) => {
+  if (e.target && e.target.id === "reset-btn") {
+    const input = document.getElementById("sn");
+    input.value = "";
+    input.focus();
+    setResultHTML(
+      `<span class="tag">Klar</span><p>Skriv inn et rammenummer og trykk <b>Sjekk</b>.</p>`,
+      "loading"
+    );
+  }
 });
 
 init();
